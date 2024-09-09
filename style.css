@@ -5,7 +5,8 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Geologica", sans-serif; /* Família da fonte importada */
-    background: linear-gradient(to right, #E5C100, #8B0000, #000000);
+    /* background: linear-gradient(to right, #E5C100, #8B0000, #000000); */
+    background-image: url('Awards.jpg');
     background-size: cover; /* Preenchimento da imagem ou cor */
     background-position: center; /* Posição da imagem ou cor */
     background-repeat: no-repeat; /* Impede que a imagem ou cor se repita no background */
@@ -75,6 +76,8 @@ section button:hover {
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto do resultado da pesquisa */
+    
 }
 
 /* Estiliza cada item de resultado */
@@ -103,12 +106,15 @@ section button:hover {
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
+
+/* Estiliza os links (Cores e Tamanho de Fontes) */
 a {
     text-decoration: none; /* Remove o sublinhado */
     color: #333; /* Define a cor do texto do link */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto*/
   }
 
+/* Estiliza os links quando são passados o mouse sobre (Cores e Tamanho de Fontes) */
 a:hover {
     color: #30475E; /* Mantém a cor do link ao passar o mouse */
     text-decoration: none; /* Mantém o link sem sublinhado */
