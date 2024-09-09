@@ -7,7 +7,7 @@ function pesquisar() {
       return;
     }
   
-    const apiUrl = `http://www.omdbapi.com/?apikey=cc1b8e8d&s=${campoPesquisa}`;
+    const apiUrl = `https://www.omdbapi.com/?apikey=cc1b8e8d&s=${campoPesquisa}`;
   
     fetch(apiUrl)
       .then(response => response.json())
@@ -17,7 +17,7 @@ function pesquisar() {
           data.Search.forEach(filme => {
             html += `
               <div class="item-resultado">
-                <img src="http://img.omdbapi.com/?apikey=cc1b8e8d&i=${filme.imdbID}" alt="${filme.Title}">
+                <img src="https://img.omdbapi.com/?apikey=cc1b8e8d&i=${filme.imdbID}" alt="${filme.Title}">
                 <h2>${filme.Title} (${filme.Year})</h2>
                 ${filme.Ratings ? `<p>Classificação: ${filme.Ratings[0].Value}</p>` : '<p>Classificação não informada</p>'}
                 <a href="https://www.imdb.com/title/${filme.imdbID}" target="_blank">Ver no IMDb</a>
