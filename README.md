@@ -17,7 +17,7 @@
 * **HTML:** A estrutura básica da página, definindo os elementos como cabeçalho, corpo e rodapé.
 * **CSS:** Estilizando a página para deixar ela com uma cara bem legal e fácil de usar.
 * **JavaScript:** A mágica por trás da busca! É o JavaScript que procura pelos filmes na nossa base de dados e mostra os resultados na tela.
-* **Integração com OMDb API** Uma API RESTful que fornece informações sobre filmes.
+* **Integração com OMDb API:** Uma API RESTful que fornece informações sobre filmes.
 * **Works with Google Gemini**
 
 ## Como usar este projeto:
