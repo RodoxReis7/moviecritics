@@ -69,30 +69,52 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
+    display: grid;
     color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* Adiciona um espaço de 1rem entre os itens do grid */
+    gap: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto do resultado da pesquisa */
     
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #22283166; /* Cor de fundo dos itens */
+    text-align: center; /* Alinha o texto ao centro */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
+/* Seletor para as imagens dentro dos itens de resultado */
+.item-resultado img {
+    /* Define a largura máxima da imagem como 100% do container */
+    max-width: 100%;
+    /* Adiciona uma margem inferior de 1rem */
+    margin-bottom: 1rem;
+}
+
+
 /* Estiliza os títulos dentro dos itens de resultado */
+/* Seletor para os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #ffffff; /* Cor do texto */
+    /* Alinha o texto do título ao centro */
+    text-align: center;
+    /* Adiciona uma margem inferior de 0.5rem */
+    margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto */
 }
 
