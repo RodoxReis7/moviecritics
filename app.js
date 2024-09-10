@@ -14,7 +14,7 @@ function pesquisar() {
     return; // Interrompe a função se nenhum termo foi digitado.
   }
 
-  const apiUrl = `http://www.omdbapi.com/?apikey=cc1b8e8d&s=${campoPesquisa}`;
+  const apiUrl = `https://www.omdbapi.com/?apikey=cc1b8e8d&s=${campoPesquisa}`;
   // Constrói a URL da API OMDb, incluindo a chave de API e o termo de pesquisa.
 
   fetch(apiUrl)
