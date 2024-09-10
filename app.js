@@ -7,7 +7,7 @@ function pesquisar() {
       return;
     }
   
-    const apiUrl = `https://www.omdbapi.com/?apikey=cc1b8e8d&s=${campoPesquisa}`;
+    const apiUrl = `http://www.omdbapi.com/?apikey=cc1b8e8d&s=${campoPesquisa}`;
   
     fetch(apiUrl)
       .then(response => response.json())
