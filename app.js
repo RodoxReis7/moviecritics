@@ -25,9 +25,13 @@ function pesquisar() {
         // Verifica se a pesquisa foi bem-sucedida.
         let html = '';
         data.Search.forEach(filme => {
-          // Itera sobre cada filme encontrado e cria o HTML correspondente.
           html += `
             <div class="item-resultado">
+              <h2>${filme.Title}</h2>
+              <img src="${filme.Poster}" alt="${filme.Title}">
+              <p>Ano: ${filme.Year}</p>
+              ${filme.Ratings ? `<p>Classificação: ${filme.Ratings[0].Value}</p>` : '<p>Classificação não informada</p>'}
+              <a href="https://www.imdb.com/title/${filme.imdbID}" target="_blank">Ver no IMDb</a>
               </div>
           `;
         });
